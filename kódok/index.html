@@ -15,43 +15,65 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Agro mókus</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Agro mókus</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
     </header>
     <main>
         <div>
             <h2><a href="">Kezdőlap</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum unde praesentium inventore, ea consequuntur ducimus iste perspiciatis culpa incidunt ipsa. Voluptas ratione, maiores iste eligendi error velit. Quia, soluta consequatur.</p>
+            <p>A mezőgazdaság az emberiség egyik legősibb és legfontosabb tevékenysége, amely alapvető szerepet játszik az élelmiszer-ellátásban és a vidéki élet fenntartásában. Nemcsak termelést jelent, hanem hagyományt, tudást és folyamatos alkalmazkodást is a természethez. A modern mezőgazdaság ötvözi a tapasztalatot a korszerű technológiákkal, hogy hatékonyabb és fenntarthatóbb megoldásokat kínáljon. A talaj, a növények és az állatok gondos kezelése elengedhetetlen a minőségi termeléshez. Az ágazat jelentős hatással van a gazdaságra, a környezetre és a mindennapi életünkre is. A mezőgazdaság ma már nemcsak munka, hanem felelősség a jövő generációi felé.</p>
         </div>
         <nav>
             <ul>
@@ -61,6 +83,44 @@
                 <li><i class="bi bi-basket-fill"></i>Értékesítő felkereése</li>
             </ul>
         </nav>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
+            <div class="col">
+                <div class="card">
+                    <img src="./img/jd_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">John Deere</h5>
+                        <p class="card-text">A traktor a mezőgazdaság egyik legfontosabb munkaeszköze, amely nélkülözhetetlen a mindennapi földmunkák során. Sokoldalúságának köszönhetően számos munkafolyamatban használható, a talajelőkészítéstől a betakarításig.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/jd_2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">John Deere</h5>
+                        <p class="card-text">A modern traktorok fejlett technológiával vannak felszerelve, amelyek növelik a hatékonyságot és csökkentik a munkavégzés terheit. A kényelmes vezetőfülke és az intelligens vezérlés hosszú munkanapokon is megkönnyíti a kezelést.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/ih_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Case IH</h5>
+                        <p class="card-text">A megfelelő traktor kiválasztása kulcsfontosságú a gazdaság eredményes működéséhez. Teljesítmény, üzemanyag-hatékonyság és megbízhatóság szempontjából is fontos, hogy az adott feladathoz illeszkedjen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/kbt_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kubota</h5>
+                        <p class="card-text">A traktor nem csupán egy gép, hanem a gazdálkodó egyik legfontosabb társa a mindennapi munkában. Hosszú távon hozzájárul a termelékenységhez, a pontos munkavégzéshez és a mezőgazdasági folyamatok sikeréhez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
