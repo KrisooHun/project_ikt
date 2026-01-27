@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regisztráció</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Bejelentkezés</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url(../img/bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-box {
+      width: 320px;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #367C2B;
+      box-shadow:
+        0 0 15px #367C2B,
+        0 0 30px #367C2B;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 25px;
+      text-shadow: 0 0 10px #367C2B;
+      letter-spacing: 2px;
+    }
+
+    .login-box input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #367C2B;
+      color: #fff;
+      outline: none;
+    }
+
+    .login-box input::placeholder {
+      color: #ffffff;
+    }
+
+    .login-box button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: 2px solid #367C2B;
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: 2px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #367C2B;
+    }
+
+    .login-box button:hover {
+      background: #367C2B;
+      color: #ffffff;
+      box-shadow:
+        0 0 20px #367C2B,
+        0 0 40px #367C2B;
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 15px;
+      color: #fff;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    .navbar{
+    background: rgba(0, 0, 0,0.3);
+    }
+
+  </style>
 </head>
 <body>
-    
+<main>
+  <div class="login-box">
+    <h2>LOGIN</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>LOGIN</button>
+    <a href="#">Nincs fiókod? Regisztrálj!</a>
+  </div>
+</main>
+
 </body>
+
 </html>
