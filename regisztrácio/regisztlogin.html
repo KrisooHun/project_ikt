@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Bejelentkezés</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="shortcut icon" href="./img/favicooooon.png" type="image/x-icon">
   <style>
     * {
@@ -18,10 +19,14 @@
       background-repeat: no-repeat;
       color: #fff;
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
+
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
+    }
+
+    div {
+      margin: 5rem;
     }
 
     .login-box {
@@ -78,28 +83,143 @@
     }
 
     .login-box a {
+
       display: block;
       margin-top: 15px;
       color: #fff;
       font-size: 12px;
       text-decoration: none;
     }
-    .navbar{
-    background: rgba(0, 0, 0,0.3);
+
+    main {
+      flex: 1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
+    .navbar {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+
+    .footer-agro h5,
+    .footer-agro h6 {
+      color: #9be15d;
+    }
+
+    .footer-line {
+      border-color: rgba(155, 225, 93, 0.4);
+    }
+
+    .footer-list a {
+      color: #ddd;
+      text-decoration: none;
+      position: relative;
+    }
+
+
+    .footer-list a:hover {
+      color: #9be15d;
+      text-shadow: 2px 2px 8px black;
+    }
+
+
+    .footer-list a::after {
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0%;
+      height: 2px;
+      background: #9be15d;
+      transition: width 0.3s ease;
+    }
+
+    .footer-list a:hover::after {
+      width: 100%;
+    }
+
+
+    .footer-agro i {
+      color: #9be15d;
+      margin-right: 6px;
+    }
+
+
+    .footer-bottom {
+      color: #cfcf9a;
+    }
+
+
+    .footer-agro {
+      background: rgba(0, 0, 0, 0.2);
+      color: #ddd;
+
+      padding: 25px 0 15px;
+      margin-top: 0;
+
+      backdrop-filter: blur(3px);
+    }
+    .footer-agro li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
   </style>
 </head>
+
 <body>
-<main>
-  <div class="login-box">
-    <h2>LOGIN</h2>
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password">
-    <button>LOGIN</button>
-    <a href="#">Nincs fiókod? Regisztrálj!</a>
-  </div>
-</main>
+  <main>
+    <div class="login-box">
+      <h2>Bejelentkezés</h2>
+      <input type="text" placeholder="Felhasználónév">
+      <input type="Jelszó" placeholder="Jelszó">
+      <button>Bejelentkezés</button>
+      <a href="regiszt.html">Nincs fiókod? Regisztrálj!</a>
+    </div>
+  </main>
+
+
+  <footer class="footer-agro">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h5 class="shadow-text">Agro mókus 🌾</h5>
+          <p>
+            Modern megoldások a mezőgazdaságban.
+            Traktorok, technológia, jövő.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="shadow-text">Navigáció</h6>
+          <ul class="footer-list">
+            <li><a href="../kódok/index.html">Kezdőlap</a></li>
+            <li><a href="#traktorok">Traktorok</a></li>
+            <li><a href="#arazas">Árazás</a></li>
+            <li><a href="../regisztrácio/regisztlogin.html" target="#">Belépés</a></li>
+            <li><a href="../regisztrácio/regiszt.html" target="_blank">Regisztráció</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="shadow-text">Kapcsolat</h6>
+          <p><i class="bi bi-geo-alt"></i> Magyarország</p>
+          <p><i class="bi bi-envelope"></i> info@agromokus.hu</p>
+          <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
+        </div>
+
+      </div>
+
+      <hr class="footer-line">
+
+      <p class="text-center footer-bottom">
+        © 2026 Agro mókus • Made with 🌱 & 💻
+      </p>
+    </div>
+  </footer>
+
 
 </body>
 
