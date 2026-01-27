@@ -5,123 +5,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro mókus</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicooooon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Agro mókus</a>
+                <a class="navbar-brand" href="./index.html">Agro mókus</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#home">Kezdőlap</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#traktorok">Traktorok</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#arazas">Árazás</a>
                         </li>
+
+                        <!-- JAVÍTOTT BELÉPÉS -->
+                        <li class="nav-item">
+                            <a id="belép" class="nav-link" target="_blank" href="../regisztrácio/regisztlogin.html">Belépés</a>
+                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown link
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Nyissa le
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#home">Kezdőlap</a></li>
+                                <li><a class="dropdown-item" href="#traktorok">Traktorok</a></li>
+                                <li><a class="dropdown-item" href="#arazas">Árazás</a></li>
+                                <li><a class="dropdown-item" href="../regisztrácio/regisztlogin.html" target="_blank">Belépés</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Carousel -->
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="./img/ih_1.jpg" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="./img/jd_1.jpg" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="./img/kbt_1.jpg" class="d-block w-100">
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-    </header>
-    <main>
-        <div>
-            <h2><a href="">Kezdőlap</a></h2>
-            <p>A mezőgazdaság az emberiség egyik legősibb és legfontosabb tevékenysége, amely alapvető szerepet játszik az élelmiszer-ellátásban és a vidéki élet fenntartásában. Nemcsak termelést jelent, hanem hagyományt, tudást és folyamatos alkalmazkodást is a természethez. A modern mezőgazdaság ötvözi a tapasztalatot a korszerű technológiákkal, hogy hatékonyabb és fenntarthatóbb megoldásokat kínáljon. A talaj, a növények és az állatok gondos kezelése elengedhetetlen a minőségi termeléshez. Az ágazat jelentős hatással van a gazdaságra, a környezetre és a mindennapi életünkre is. A mezőgazdaság ma már nemcsak munka, hanem felelősség a jövő generációi felé.</p>
-        </div>
+
+        <!-- Kezdőlap szöveg -->
+        <h2 class="white" id="home">Kezdőlap</h2>
+        <p class="white">
+            A mezőgazdaság az emberiség egyik legősibb és legfontosabb tevékenysége, amely alapvető szerepet játszik
+            az élelmiszer-ellátásban és a vidéki élet fenntartásában. Nemcsak termelést jelent, hanem hagyományt,
+            tudást és folyamatos alkalmazkodást is a természethez. A modern mezőgazdaság ötvözi a tapasztalatot a
+            korszerű technológiákkal, hogy hatékonyabb és fenntarthatóbb megoldásokat kínáljon.
+        </p>
+
+        <!-- Nav ikonok -->
         <nav>
-            <ul>
-                <li><i class="bi bi-map"></i>Márkakereskedő keresés</li>
-                <li><i class="bi bi-shield"></i>Alkatrészek keresése</li>
-                <li><i class="bi bi-radar"></i>Használati felszerelés</li>
-                <li><i class="bi bi-basket-fill"></i>Értékesítő felkereése</li>
+            <ul class="white">
+                <li><i class="bi bi-map"></i> Márkakereskedő keresés</li>
+                <li><i class="bi bi-shield"></i> Alkatrészek keresése</li>
+                <li><i class="bi bi-radar"></i> Használati felszerelés</li>
+                <li><i class="bi bi-basket-fill"></i> Értékesítő felkeresése</li>
             </ul>
         </nav>
+
+        <!-- Traktorok -->
+        <h3 class="white" id="traktorok">Traktorok</h3>
         <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
             <div class="col">
-                <div class="card">
-                    <img src="./img/jd_1.jpg" class="card-img-top" alt="...">
+                <div class="card hover-card">
+                    <img src="./img/jd_1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">John Deere</h5>
-                        <p class="card-text">A traktor a mezőgazdaság egyik legfontosabb munkaeszköze, amely nélkülözhetetlen a mindennapi földmunkák során. Sokoldalúságának köszönhetően számos munkafolyamatban használható, a talajelőkészítéstől a betakarításig.</p>
+                        <h5 class="card-title shadow-text">John Deere</h5>
+                        <p class="card-text">A traktor a mezőgazdaság egyik legfontosabb munkaeszköze, nélkülözhetetlen a földmunkák során.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="./img/jd_2.jpg" class="card-img-top" alt="...">
+                <div class="card hover-card">
+                    <img src="./img/jd_2.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">John Deere</h5>
-                        <p class="card-text">A modern traktorok fejlett technológiával vannak felszerelve, amelyek növelik a hatékonyságot és csökkentik a munkavégzés terheit. A kényelmes vezetőfülke és az intelligens vezérlés hosszú munkanapokon is megkönnyíti a kezelést.</p>
+                        <h5 class="card-title shadow-text">John Deere</h5>
+                        <p class="card-text">A modern traktorok fejlett technológiával vannak felszerelve.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="./img/ih_1.jpg" class="card-img-top" alt="...">
+                <div class="card hover-card">
+                    <img src="./img/ih_1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Case IH</h5>
-                        <p class="card-text">A megfelelő traktor kiválasztása kulcsfontosságú a gazdaság eredményes működéséhez. Teljesítmény, üzemanyag-hatékonyság és megbízhatóság szempontjából is fontos, hogy az adott feladathoz illeszkedjen.</p>
+                        <h5 class="card-title shadow-text">Case IH</h5>
+                        <p class="card-text">A megfelelő traktor kiválasztása kulcsfontosságú.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="./img/kbt_1.jpg" class="card-img-top" alt="...">
+                <div class="card hover-card">
+                    <img src="./img/kbt_1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Kubota</h5>
-                        <p class="card-text">A traktor nem csupán egy gép, hanem a gazdálkodó egyik legfontosabb társa a mindennapi munkában. Hosszú távon hozzájárul a termelékenységhez, a pontos munkavégzéshez és a mezőgazdasági folyamatok sikeréhez.</p>
+                        <h5 class="card-title shadow-text">Kubota</h5>
+                        <p class="card-text">A traktor a gazdálkodó egyik legfontosabb társa.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-</body>
 
+        <!-- Árazás -->
+        <h3 class="white mt-5" id="arazas">Árazás</h3>
+        <table class="table table-dark table-hover text-center mt-3">
+            <tr>
+                <th>Csomag</th>
+                <th>Leírás</th>
+                <th>Ár</th>
+            </tr>
+            <tr>
+                <td>Alap</td>
+                <td>Kisebb gazdaság</td>
+                <td>49 900 Ft</td>
+            </tr>
+            <tr>
+                <td>Prémium</td>
+                <td>Közepes gazdaság</td>
+                <td>89 900 Ft</td>
+            </tr>
+            <tr>
+                <td>Pro</td>
+                <td>Nagyüzem</td>
+                <td>149 900 Ft</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
