@@ -16,6 +16,7 @@ main{
     background: rgba(0, 0, 0,0.3);
     width: 80%;
     margin: auto;
+    backdrop-filter: blur(10px);
 }
 
 main nav ul{
@@ -24,6 +25,28 @@ main nav ul{
     align-items: center;
     list-style: none;
     gap: 1rem;
+}
+
+
+#green{
+    color: #9be15d;
+}
+
+
+#bg{
+    background: rgb(37, 37, 37);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    transition: 1s all;
+}
+
+#bg li:hover{
+    color: #9be15d;
+    scale: 1.05;
+    text-shadow: 4px 4px 10px black;
 }
 
 img{
@@ -91,7 +114,6 @@ main{
 .footer-agro h6 {
     color: #9be15d; 
 }
-
 .footer-line {
     border-color: rgba(155, 225, 93, 0.4);
 }
