@@ -93,15 +93,7 @@ img{
     box-shadow: 0 10px 25px rgba(0,0,0,0.7);
 }
 
-/* Shadow effektus a címekre (h2, h3, card-title) */
-.shadow-text{
-    text-shadow: 4px 4px 10px black;
-    transition: all 0.5s;
-}
 
-.shadow-text:hover{
-    text-shadow: 6px 6px 12px black;
-}
 
 
 main{
