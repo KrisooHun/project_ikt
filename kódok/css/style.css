@@ -51,7 +51,8 @@ main nav ul{
 img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;  
+    /* nem torzít */
 }
 
 .card{
@@ -97,8 +98,7 @@ main{
 }
 
 
-.footer-agro h5,
-.footer-agro h6 {
+.footer-agro h5, .footer-agro h6 {
     color: #9be15d; 
 }
 .footer-line {
